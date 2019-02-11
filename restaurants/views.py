@@ -13,6 +13,6 @@ def restaurant_list(request):
 
 def restaurant_detail(request, restaurant_id):
     context = {
-        "restaurant": Restaurant.objects.get(id =1),
+        "restaurant": Restaurant.objects.get(id =restaurant_id),
     }
     return render(request, 'detail.html', context)
